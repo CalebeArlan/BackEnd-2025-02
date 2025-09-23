@@ -13,7 +13,6 @@ public class CarroResponse {
         this.valor = valor;
     }
 
-    // Getters
     public String getMarca() { return marca; }
     public String getModelo() { return modelo; }
     public String getAno() { return ano; }

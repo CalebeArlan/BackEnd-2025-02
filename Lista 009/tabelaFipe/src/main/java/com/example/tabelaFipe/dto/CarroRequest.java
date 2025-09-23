@@ -5,7 +5,6 @@ public class CarroRequest {
     private String modelo;
     private String ano;
 
-    // Getters e Setters
     public String getMarca() {
         return marca;
     }

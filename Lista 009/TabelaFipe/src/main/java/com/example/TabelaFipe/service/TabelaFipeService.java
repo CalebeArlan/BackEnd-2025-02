@@ -14,11 +14,8 @@ public class TabelaFipeService {
     public CarroResponse consultaFipe(CarroRequest request) {
         RestTemplate restTemplate = new RestTemplate();
 
-        // Buscar lista de marcas
         var marcas = restTemplate.getForObject(BASE_URL + "/marcas", Object[].class);
 
-        // (Obs: aqui idealmente filtrar pela marca desejada, modelo e ano.
-        // Para simplificação, assumo que o usuário já envia IDs válidos)
 
         String url = BASE_URL + "/marcas/" + request.getMarca()
                 + "/modelos/" + request.getModelo()
